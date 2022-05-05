@@ -53,6 +53,7 @@ const resolvers = {
         },
         deleteUser: (parent, args) => {
             const id = args.id;
+            console.log(id);
             const user = _.remove(userList, (user) => user.id === Number(id));
             return null;
         }
